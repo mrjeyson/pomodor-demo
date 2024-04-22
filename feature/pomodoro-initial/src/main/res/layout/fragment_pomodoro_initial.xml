@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.newage.feature.pomodoro.initial.InitialSetupHourMinuteItemView
+            android:id="@+id/focus_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            app:cardUseCompatPadding="true"
+            app:hourHintText="@string/_00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:minuteHintText="25"
+            app:titleText="@string/focus_duration" />
+
+        <com.newage.feature.pomodoro.initial.InitialSetupHourMinuteItemView
+            android:id="@+id/short_break_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            app:cardUseCompatPadding="true"
+            app:hourHintText="@string/_00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/focus_duration"
+            app:minuteHintText="@string/_05"
+            app:titleText="@string/short_break_duration" />
+
+        <com.newage.feature.pomodoro.initial.InitialSetupHourMinuteItemView
+            android:id="@+id/long_break_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            app:cardUseCompatPadding="true"
+            app:hourHintText="@string/_00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/short_break_duration"
+            app:minuteHintText="@string/_15"
+            app:titleText="@string/long_break_duration" />
+
+        <com.newage.feature.pomodoro.initial.InitialSetupPomodoroItemView
+            android:id="@+id/long_break_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/long_break_duration"
+            app:pomodoroHintText="@string/_04"
+            app:pomodoroTitleText="@string/long_break_after" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

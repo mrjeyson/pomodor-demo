@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="error_text_color">#FF5449</color>
+
+    <color name="storm_gray">#74777F</color>
+    <color name="mako">#44474E</color>
+    <color name="ghost">#C4C6D0</color>
+    <color name="midnight">#001A40</color>
+    <color name="athens_gray">#E0E2EC</color>
+
+    <color name="dodger_blue">#468FFF</color>
+    <color name="dodger_blue_2">#147EFB</color>
+    <color name="mountain_mist">#919094</color>
+    <color name="black">#E0E2EC</color>
+
+    <color name="emperor">#E0E2EC</color>
+    <color name="white_tint">#74777F</color>
+    <color name="pomodoro_timer_large_text_color_blue">#80CFFF</color>
+    <color name="pomodoro_timer_gray_color">#E0E2EC</color>
+    <color name="pomodoro_timer_green_color">#01A742</color>
+    <color name="pomodoro_timer_red_color">#FF5959</color>
+    <color name="progress_track_color">#7D7D7D</color>
+    <color name="progress_track_red_color">#FF5449</color>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pomodoro_content_light">#74777F</color>
+    <color name="pomodoro_content_dark">#44474E</color>
+    <color name="play_pause_color">#147EFB</color>
+    <color name="icon_tint_color">#44474E</color>
+</resources>

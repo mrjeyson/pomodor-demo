@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_2sdp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/focus"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.Text.Green"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_next"
+        app:layout_constraintEnd_toStartOf="@+id/ib_next"
+        app:layout_constraintStart_toEndOf="@+id/ib_previous"
+        app:layout_constraintTop_toTopOf="@+id/ib_next" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_round_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.SubText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:text="Round 1" />
+
+    <ImageButton
+        android:id="@+id/ib_previous"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="?attr/actionBarItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+    <ImageButton
+        android:id="@+id/ib_next"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="?attr/actionBarItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar"
+        style="@style/TextAppearance.Pomodoro.Content.Timer.CircularProgress.Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:max="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_round_count"
+        tools:progress="75" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.TextOnly.Time"
+        app:layout_constraintBottom_toTopOf="@+id/tv_pomodoro_count"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+        tools:text="00:00" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pomodoro_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.Text.PomodoroCount.Green"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_timer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timer"
+        tools:text="Pomodoro 1" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tomato_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+        tools:itemCount="1"
+        tools:listitem="@layout/pomodoro_completed_item_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

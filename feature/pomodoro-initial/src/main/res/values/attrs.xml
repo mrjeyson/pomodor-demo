@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InitialSetupHourMinuteItemView">
+        <attr format="string" name="titleText"/>
+        <attr format="string" name="hourHintText"/>
+        <attr format="string" name="hourText"/>
+        <attr format="string" name="minuteHintText"/>
+        <attr format="string" name="minuteText"/>
+        <attr format="reference" name="image"/>
+    </declare-styleable>
+
+    <declare-styleable name="InitialSetupPomodoroItemView">
+        <attr format="string" name="pomodoroTitleText"/>
+        <attr format="string" name="pomodoroHintText"/>
+        <attr format="string" name="pomodoroText"/>
+    </declare-styleable>
+</resources>

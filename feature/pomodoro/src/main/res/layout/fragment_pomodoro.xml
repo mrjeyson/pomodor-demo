@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_pomodoro_fragment"
+        android:name="com.timers.stopwatch.core.common.android.navigation.StopwatchHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@+id/fab_play_pause"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph_pomodoro" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fab_play_pause"
+        app:layout_constraintBottom_toTopOf="@+id/tv_reset"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:srcCompat="@drawable/ic_pomodoro_reset"
+        android:elevation="@dimen/_4sdp"
+        android:contentDescription="Reset"
+        app:tint="@color/icon_tint_color"
+        app:maxImageSize="@dimen/_24sdp"
+        app:fabCustomSize="@dimen/_42sdp"
+        app:backgroundTint="@color/white_tint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/fab_reset"
+        app:layout_constraintEnd_toEndOf="@+id/fab_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/reset"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Text"
+        android:gravity="center_horizontal|top" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_play_pause"
+        app:constraint_referenced_ids="fab_play_pause,tv_play_pause"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_play_pause"
+        app:layout_constraintStart_toEndOf="@+id/fab_reset"
+        app:layout_constraintBottom_toTopOf="@+id/tv_play_pause"
+        app:layout_constraintEnd_toStartOf="@+id/fab_stop_finish"
+        app:tint="@color/white"
+        app:srcCompat="@drawable/ic_pomodoro_play"
+        app:maxImageSize="@dimen/_38sdp"
+        android:elevation="@dimen/_4sdp"
+        android:contentDescription="PlayPause"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:backgroundTint="@color/play_pause_color"
+        app:fabCustomSize="@dimen/_56sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/fab_play_pause"
+        app:layout_constraintEnd_toEndOf="@+id/fab_play_pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/start"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Text.Bold"
+        android:gravity="center_horizontal|top" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_stop_finish"
+        app:constraint_referenced_ids="fab_stop_finish,tv_stop_finish"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_stop_finish"
+        app:layout_constraintStart_toEndOf="@+id/fab_play_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_stop_finish"
+        app:srcCompat="@drawable/ic_pomodoro_stop"
+        app:tint="@color/icon_tint_color"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:elevation="@dimen/_4sdp"
+        android:contentDescription="Stop"
+        app:fabCustomSize="@dimen/_42sdp"
+        app:maxImageSize="@dimen/_30sdp"
+        app:backgroundTint="@color/white_tint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_stop_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/fab_stop_finish"
+        app:layout_constraintEnd_toEndOf="@+id/fab_stop_finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/stop"
+        android:textAppearance="@style/TextAppearance.Pomodoro.Content.Text"
+        android:gravity="center_horizontal|top" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

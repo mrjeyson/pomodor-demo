@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_86sdp"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            style="@style/TextAppearance.Pomodoro.Content.Setup.TextOnly.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/short_break_duration"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ib_plus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_plus"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pomodoro_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/et_hour"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_hour"
+            style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Large"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@drawable/time_background_selector"
+            android:elevation="@dimen/_6sdp"
+            android:gravity="center"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingVertical="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_hour"
+            app:layout_constraintEnd_toStartOf="@+id/tv_colon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_hour"
+            style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/hour"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_hour"
+            app:layout_constraintStart_toStartOf="@+id/et_hour"
+            app:layout_constraintTop_toBottomOf="@+id/et_hour" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_colon"
+            style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:elevation="@dimen/_8sdp"
+            android:hint=":"
+            app:layout_constraintBottom_toBottomOf="@+id/et_hour"
+            app:layout_constraintEnd_toStartOf="@+id/et_minute"
+            app:layout_constraintTop_toTopOf="@+id/et_hour" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_minute"
+            style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Large"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/time_background_selector"
+            android:elevation="@dimen/_6sdp"
+            android:gravity="center"
+            android:hint="00"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingVertical="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_minute"
+            app:layout_constraintEnd_toStartOf="@+id/ib_minus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_minute"
+            style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/minute"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_minute"
+            app:layout_constraintStart_toStartOf="@+id/et_minute"
+            app:layout_constraintTop_toBottomOf="@+id/et_minute" />
+
+        <ImageButton
+            android:id="@+id/ib_minus"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pomodoro_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

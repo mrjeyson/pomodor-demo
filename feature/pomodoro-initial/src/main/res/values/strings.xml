@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="focus_duration">Focus duration</string>
+    <string name="short_break_duration">Short break duration</string>
+    <string name="long_break_duration">Long break duration</string>
+    <string name="long_break_after">Long break after</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="lbl_pomodoro">pomodoro</string>
+    <string name="please_enter_hours_and_minutes">Please enter hours and minutes</string>
+    <string name="_00">00</string>
+    <string name="_05">05</string>
+    <string name="_15">15</string>
+    <string name="_04">04</string>
+</resources>

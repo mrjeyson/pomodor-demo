@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Pomodoro.Content.Timer.TextOnly.ResultTitleLarge" parent="TextAppearance.Stopwatch.Headline2">
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:textColor">@color/color_result_big_text</item>
+        <item name="fontFamily">@font/inter_600</item>
+    </style>
+
+    <style name="TextAppearance.Pomodoro.Content.Timer.TextOnly.AtStartTime" parent="TextAppearance.Stopwatch.Headline3">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textColor">@color/pomodoro_timer_large_text_color_blue</item>
+        <item name="fontFamily">@font/inter_600</item>
+    </style>
+
+    <style name="TextAppearance.Pomodoro.Content.Timer.SubText" parent="TextAppearance.Stopwatch.Headline4">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/color_sub_text</item>
+        <item name="fontFamily">@font/inter_500</item>
+    </style>
+
+
+</resources>

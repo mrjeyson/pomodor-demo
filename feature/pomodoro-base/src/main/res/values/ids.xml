@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_initial_to_timer" type="id"/>
+    <item name="action_timer_to_result" type="id"/>
+    <item name="action_reset_to_initial" type="id"/>
+</resources>

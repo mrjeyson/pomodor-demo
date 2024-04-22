@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timer &amp; Stopwatch</string>
+    <string name="home">Home</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="timer">Timer</string>
+    <string name="intervals">Intervals</string>
+    <string name="pomodoro">Pomodoro</string>
+</resources>

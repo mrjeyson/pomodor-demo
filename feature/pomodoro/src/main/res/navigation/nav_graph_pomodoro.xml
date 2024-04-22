@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_pomodoro"
+    app:startDestination="@id/nav_pomodoro_initial">
+
+    <include app:graph="@navigation/nav_pomodoro_initial" />
+    <include app:graph="@navigation/nav_pomodoro_timer" />
+    <include app:graph="@navigation/nav_pomodoro_result" />
+
+    <action
+        android:id="@id/action_initial_to_timer"
+        app:destination="@id/nav_pomodoro_timer" />
+
+    <action
+        android:id="@id/action_timer_to_result"
+        app:destination="@id/nav_pomodoro_result" />
+
+    <action
+        android:id="@id/action_reset_to_initial"
+        app:destination="@id/nav_pomodoro_initial"
+        app:popUpTo="@id/nav_pomodoro_initial"
+        app:popUpToInclusive="true" />
+
+</navigation>

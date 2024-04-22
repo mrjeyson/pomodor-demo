@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_pomodoro_initial"
+    app:startDestination="@id/pomodoro_initial">
+
+    <fragment
+        android:id="@+id/pomodoro_initial"
+        android:name="com.newage.feature.pomodoro.initial.PomodoroInitialFragment"
+        android:label="@string/pomodoro"
+        tools:layout="@layout/fragment_pomodoro_initial" />
+
+</navigation>

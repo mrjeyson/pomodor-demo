@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pomodoro_setup_hint_color">#ABABAF</color>
+    <color name="pomodoro_setup_small_text_color">#74777F</color>
+    <color name="pomodoro_setup_large_text_color">#7D7D7D</color>
+    <color name="pomodoro_setup_large_text_color_blue">#147EFB</color>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pomodoro_timer_large_text_color_blue">#147EFB</color>
+    <color name="color_sub_text">#919094</color>
+    <color name="color_result_big_text">#5E5E62</color>
+    <color name="color_gray_result_big_text">#5E5E62</color>
+</resources>

@@ -64,6 +64,7 @@
     <color name="pomodoro_timer_content_color">#01A742</color>
     <color name="icon_color">#44474E</color>
     <color name="play_pause_icons_color">#FFFFFF</color>
+    <color name="play_pause_buttons_background">#FFFFFF</color>
 
 
 </resources>

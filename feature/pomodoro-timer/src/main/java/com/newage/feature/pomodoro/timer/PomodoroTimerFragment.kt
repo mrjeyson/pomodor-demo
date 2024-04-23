@@ -111,7 +111,7 @@ class PomodoroTimerFragment :
                     onFocusMode()
                 }
 
-                PomodoroTimerViewModel.TimerMode.SORT_BREAK -> {
+                PomodoroTimerViewModel.TimerMode.SHORT_BREAK -> {
                     binding.tvTitle.setTextAppearance(
                         requireContext(),
                         R.style.TextAppearance_Pomodoro_Content_Timer_Text_Red,

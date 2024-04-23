@@ -58,8 +58,11 @@ class PomodoroFragment :
         pomodoroSharedViewModel.isPlaying.observe(viewLifecycleOwner) {
             if (it) {
                 binding.fabPlayPause.setImageResource(R.drawable.ic_pomodoro_pause)
+                binding.tvPlayPause.text = getString(R.string.pause)
             } else {
                 binding.fabPlayPause.setImageResource(R.drawable.ic_pomodoro_play)
+                binding.tvPlayPause.text = getString(R.string.play)
+
             }
         }
 

@@ -71,8 +71,8 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_play_pause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_17sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:gravity="center_horizontal|top"
         android:text="@string/start"

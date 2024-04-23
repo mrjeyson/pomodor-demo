@@ -22,7 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-       <!-- <ImageButton
+        <ImageButton
             android:id="@+id/ib_plus"
             android:layout_width="@dimen/_36sdp"
             android:layout_height="@dimen/_36sdp"
@@ -34,8 +34,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/et_pomodoro"
             app:layout_constraintTop_toTopOf="parent" />
--->
-        <ImageView
+       <!-- <ImageView
             android:id="@+id/ib_plus"
             android:layout_width="@dimen/_36sdp"
             android:layout_height="@dimen/_36sdp"
@@ -46,7 +45,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/et_pomodoro"
             app:layout_constraintTop_toTopOf="parent" />
-
+-->
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_pomodoro"
             style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Large"

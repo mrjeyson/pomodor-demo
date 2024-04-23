@@ -58,8 +58,8 @@
 
     <style name="TextAppearance.Pomodoro.Content.Timer.CircularProgress" parent="Theme.Stopwatch">
         <item name="indicatorDirectionCircular">counterclockwise</item>
-        <item name="indicatorSize">@dimen/_150sdp</item>
-        <item name="trackThickness">@dimen/_10sdp</item>
+        <item name="indicatorSize">@dimen/_250sdp</item>
+        <item name="trackThickness">@dimen/_13sdp</item>
         <item name="trackCornerRadius">@dimen/_8sdp</item>
         <item name="trackColor">@color/progress_track_color</item>
     </style>

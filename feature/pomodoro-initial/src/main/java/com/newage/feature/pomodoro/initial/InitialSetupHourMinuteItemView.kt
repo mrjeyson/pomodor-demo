@@ -68,7 +68,7 @@ class InitialSetupHourMinuteItemView @JvmOverloads constructor(
     }
 
     fun setListener(etHour: TextInputEditText, etMinute: TextInputEditText) {
-        val ibPlus = findViewById<ImageView>(R.id.ib_plus)
+        val ibPlus = findViewById<ImageButton>(R.id.ib_plus)
         val ibMinus = findViewById<ImageButton>(R.id.ib_minus)
         val tvHour = findViewById<MaterialTextView>(R.id.tv_hour)
         val tvMinute = findViewById<MaterialTextView>(R.id.tv_minute)

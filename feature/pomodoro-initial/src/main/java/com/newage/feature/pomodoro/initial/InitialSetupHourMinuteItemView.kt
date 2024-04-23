@@ -5,6 +5,7 @@ import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
@@ -67,7 +68,7 @@ class InitialSetupHourMinuteItemView @JvmOverloads constructor(
     }
 
     fun setListener(etHour: TextInputEditText, etMinute: TextInputEditText) {
-        val ibPlus = findViewById<ImageButton>(R.id.ib_plus)
+        val ibPlus = findViewById<ImageView>(R.id.ib_plus)
         val ibMinus = findViewById<ImageButton>(R.id.ib_minus)
         val tvHour = findViewById<MaterialTextView>(R.id.tv_hour)
         val tvMinute = findViewById<MaterialTextView>(R.id.tv_minute)

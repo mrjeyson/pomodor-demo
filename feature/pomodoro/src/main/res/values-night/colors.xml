@@ -2,7 +2,7 @@
 <resources>
     <color name="pomodoro_content_light">#ffffff</color>
     <color name="pomodoro_content_dark">#ffffff</color>
-    <color name="play_pause_color">#80CFFF</color>
+<!--    <color name="play_pause_color">#80CFFF</color>-->
     <color name="icon_tint_color">#ffffff</color>
 
 </resources>

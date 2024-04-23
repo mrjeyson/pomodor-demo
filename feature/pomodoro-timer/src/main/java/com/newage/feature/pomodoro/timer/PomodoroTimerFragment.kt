@@ -141,7 +141,7 @@ class PomodoroTimerFragment :
                     binding.progressBar.setIndicatorColor(
                         ContextCompat.getColor(
                             requireContext(),
-                            com.timers.stopwatch.core.common.android.R.color.pomodoro_timer_large_text_color_blue,
+                            com.timers.stopwatch.core.common.android.R.color.contents_main_background_color,
                         ),
                     )
                     binding.tvTitle.text = getString(R.string.long_break)
@@ -166,7 +166,7 @@ class PomodoroTimerFragment :
         binding.progressBar.setIndicatorColor(
             ContextCompat.getColor(
                 requireContext(),
-                com.timers.stopwatch.core.common.android.R.color.pomodoro_timer_green_color,
+                com.timers.stopwatch.core.common.android.R.color.pomodoro_timer_content_color,
             ),
         )
         binding.tvTitle.text = getString(R.string.focus)

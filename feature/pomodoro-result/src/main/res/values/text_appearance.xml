@@ -9,14 +9,14 @@
     </style>
 
     <style name="TextAppearance.Pomodoro.Content.Timer.TextOnly.AtStartTime" parent="TextAppearance.Stopwatch.Headline3">
-        <item name="android:textSize">@dimen/_16ssp</item>
-        <item name="android:textColor">@color/pomodoro_timer_large_text_color_blue</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:textColor">@color/contents_main_background_color</item>
         <item name="fontFamily">@font/inter_600</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.Pomodoro.Content.Timer.SubText" parent="TextAppearance.Stopwatch.Headline4">
-        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
         <item name="android:textColor">@color/color_sub_text</item>
         <item name="fontFamily">@font/inter_500</item>
     </style>

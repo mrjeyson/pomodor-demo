@@ -22,4 +22,12 @@
     <color name="progress_track_color">#7D7D7D</color>
     <color name="progress_track_red_color">#FF5449</color>
 
+    <color name="pomodoro_duration_edit_text_background">#343538</color>
+    <color name="pomodoro_duration_card_background">#292A2D</color>
+    <color name="contents_main_background_color">#80CFFF</color>
+    <color name="pomodoro_timer_content_color">#77FD8C</color>
+    <color name="icon_color">#FFFFFF</color>
+    <color name="play_pause_icons_color">#000000</color>
+
+
 </resources>

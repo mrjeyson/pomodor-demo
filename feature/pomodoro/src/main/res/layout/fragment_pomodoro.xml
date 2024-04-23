@@ -60,14 +60,14 @@
         android:layout_marginBottom="@dimen/_8sdp"
         android:contentDescription="@null"
         android:elevation="@dimen/_4sdp"
-        app:backgroundTint="@color/play_pause_color"
+        app:backgroundTint="@color/contents_main_background_color"
         app:fabCustomSize="@dimen/_65sdp"
         app:layout_constraintBottom_toTopOf="@+id/tv_play_pause"
         app:layout_constraintEnd_toStartOf="@+id/fab_stop_finish"
         app:layout_constraintStart_toEndOf="@+id/fab_reset"
         app:maxImageSize="@dimen/_38sdp"
         app:srcCompat="@drawable/ic_pomodoro_play"
-        app:tint="@color/white" />
+        app:tint="@color/play_pause_icons_color" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_play_pause"

@@ -1,79 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:parentTag="com.google.android.material.card.MaterialCardView">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:padding="@dimen/_10sdp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_86sdp">
+        android:layout_height="@dimen/_86sdp"
+        android:background="@color/pomodoro_duration_card_background"
+        android:padding="@dimen/_10sdp">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_title"
             style="@style/TextAppearance.Pomodoro.Content.Setup.TextOnly.Large"
-            android:text="@string/short_break_duration"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/ib_plus"
-            app:layout_constrainedWidth="true"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <ImageButton
-            android:id="@+id/ib_plus"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:text="@string/short_break_duration"
+            app:layout_constrainedWidth="true"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/et_pomodoro"
+            app:layout_constraintEnd_toStartOf="@+id/ib_plus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+       <!-- <ImageButton
+            android:id="@+id/ib_plus"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_pomodoro_plus"
+            android:contentDescription="@null"
             android:scaleType="fitCenter"
+            android:src="@drawable/ic_pomodoro_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/et_pomodoro"
+            app:layout_constraintTop_toTopOf="parent" />
+-->
+        <ImageView
+            android:id="@+id/ib_plus"
             android:layout_width="@dimen/_36sdp"
-            android:layout_height="@dimen/_36sdp" />
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pomodoro_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/et_pomodoro"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_pomodoro"
             style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Large"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/tv_pomodoro"
-            app:layout_constraintEnd_toStartOf="@+id/ib_minus"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_8sdp"
             android:background="@drawable/time_background_selector"
-            app:layout_constraintVertical_chainStyle="packed"
-            android:hint="00"
-            android:maxLength="2"
+            android:elevation="@dimen/_3sdp"
             android:gravity="center"
+            android:hint="@string/_00"
             android:inputType="number"
-            android:elevation="@dimen/_6sdp"
-            android:paddingVertical="@dimen/_8sdp"
+            android:maxLength="2"
             android:paddingHorizontal="@dimen/_8sdp"
-            android:layout_width="@dimen/_84sdp"
-            android:layout_height="wrap_content" />
+            android:paddingVertical="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_pomodoro"
+            app:layout_constraintEnd_toStartOf="@+id/ib_minus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_pomodoro"
             style="@style/TextAppearance.Pomodoro.Content.Setup.Text.Small"
-            app:layout_constraintStart_toStartOf="@+id/et_pomodoro"
-            app:layout_constraintEnd_toEndOf="@+id/et_pomodoro"
-            app:layout_constraintTop_toBottomOf="@+id/et_pomodoro"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_4sdp"
             android:text="@string/lbl_pomodoro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_pomodoro"
+            app:layout_constraintStart_toStartOf="@+id/et_pomodoro"
+            app:layout_constraintTop_toBottomOf="@+id/et_pomodoro" />
 
         <ImageButton
             android:id="@+id/ib_minus"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pomodoro_minus"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_pomodoro_minus"
-            android:scaleType="fitCenter"
-            android:layout_width="@dimen/_36sdp"
-            android:layout_height="@dimen/_36sdp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </merge>

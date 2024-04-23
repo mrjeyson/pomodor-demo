@@ -9,111 +9,111 @@
         android:name="com.timers.stopwatch.core.common.android.navigation.StopwatchHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constrainedHeight="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="@dimen/_20sdp"
-        app:layout_constraintBottom_toTopOf="@+id/fab_play_pause"
         app:defaultNavHost="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/fab_play_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph_pomodoro" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_reset"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/fab_play_pause"
-        app:layout_constraintBottom_toTopOf="@+id/tv_reset"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_49sdp"
         android:layout_marginBottom="@dimen/_4sdp"
-        app:srcCompat="@drawable/ic_pomodoro_reset"
+        android:contentDescription="@null"
         android:elevation="@dimen/_4sdp"
-        android:contentDescription="Reset"
-        app:tint="@color/icon_tint_color"
-        app:maxImageSize="@dimen/_24sdp"
-        app:fabCustomSize="@dimen/_42sdp"
         app:backgroundTint="@color/white_tint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:fabCustomSize="@dimen/_49sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_reset"
+        app:layout_constraintEnd_toStartOf="@id/fab_play_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="@dimen/_24sdp"
+        app:srcCompat="@drawable/ic_pomodoro_reset"
+        app:tint="@color/icon_tint_color" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_8sdp"
-        app:layout_constraintStart_toStartOf="@+id/fab_reset"
-        app:layout_constraintEnd_toEndOf="@+id/fab_reset"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal|top"
         android:text="@string/reset"
         android:textAppearance="@style/TextAppearance.Pomodoro.Content.Text"
-        android:gravity="center_horizontal|top" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fab_reset"
+        app:layout_constraintStart_toStartOf="@+id/fab_reset" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group_play_pause"
-        app:constraint_referenced_ids="fab_play_pause,tv_play_pause"
-        android:visibility="visible"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="fab_play_pause,tv_play_pause" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_play_pause"
-        app:layout_constraintStart_toEndOf="@+id/fab_reset"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:contentDescription="@null"
+        android:elevation="@dimen/_4sdp"
+        app:backgroundTint="@color/play_pause_color"
+        app:fabCustomSize="@dimen/_65sdp"
         app:layout_constraintBottom_toTopOf="@+id/tv_play_pause"
         app:layout_constraintEnd_toStartOf="@+id/fab_stop_finish"
-        app:tint="@color/white"
-        app:srcCompat="@drawable/ic_pomodoro_play"
+        app:layout_constraintStart_toEndOf="@+id/fab_reset"
         app:maxImageSize="@dimen/_38sdp"
-        android:elevation="@dimen/_4sdp"
-        android:contentDescription="PlayPause"
-        android:layout_marginBottom="@dimen/_8sdp"
-        app:backgroundTint="@color/play_pause_color"
-        app:fabCustomSize="@dimen/_56sdp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:srcCompat="@drawable/ic_pomodoro_play"
+        app:tint="@color/white" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_play_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_8sdp"
-        app:layout_constraintStart_toStartOf="@+id/fab_play_pause"
-        app:layout_constraintEnd_toEndOf="@+id/fab_play_pause"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal|top"
         android:text="@string/start"
         android:textAppearance="@style/TextAppearance.Pomodoro.Content.Text.Bold"
-        android:gravity="center_horizontal|top" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fab_play_pause"
+        app:layout_constraintStart_toStartOf="@+id/fab_play_pause" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group_stop_finish"
-        app:constraint_referenced_ids="fab_stop_finish,tv_stop_finish"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="fab_stop_finish,tv_stop_finish" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_stop_finish"
-        app:layout_constraintStart_toEndOf="@+id/fab_play_pause"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/tv_stop_finish"
-        app:srcCompat="@drawable/ic_pomodoro_stop"
-        app:tint="@color/icon_tint_color"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_49sdp"
         android:layout_marginBottom="@dimen/_4sdp"
+        android:contentDescription="@null"
         android:elevation="@dimen/_4sdp"
-        android:contentDescription="Stop"
-        app:fabCustomSize="@dimen/_42sdp"
-        app:maxImageSize="@dimen/_30sdp"
         app:backgroundTint="@color/white_tint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:fabCustomSize="@dimen/_49sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_stop_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fab_play_pause"
+        app:maxImageSize="@dimen/_30sdp"
+        app:srcCompat="@drawable/ic_pomodoro_stop"
+        app:tint="@color/icon_tint_color" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_stop_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_8sdp"
-        app:layout_constraintStart_toStartOf="@+id/fab_stop_finish"
-        app:layout_constraintEnd_toEndOf="@+id/fab_stop_finish"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal|top"
         android:text="@string/stop"
         android:textAppearance="@style/TextAppearance.Pomodoro.Content.Text"
-        android:gravity="center_horizontal|top" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fab_stop_finish"
+        app:layout_constraintStart_toStartOf="@+id/fab_stop_finish" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

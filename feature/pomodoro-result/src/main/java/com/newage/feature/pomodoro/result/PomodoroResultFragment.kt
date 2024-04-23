@@ -71,6 +71,8 @@ class PomodoroResultFragment :
             (parentFragment?.parentFragment as StopFinishButtonUIListener).changePlayPauseVisibility(
                 View.INVISIBLE,
             )
+            (parentFragment?.parentFragment as StopFinishButtonUIListener).resetButtonText("Restart")
+
         }
     }
 }

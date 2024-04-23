@@ -119,4 +119,8 @@ class PomodoroFragment :
     override fun stopButtonText(text: String) {
         binding.tvStopFinish.text = text
     }
+
+    override fun resetButtonText(text: String) {
+        binding.tvReset.text = text
+    }
 }

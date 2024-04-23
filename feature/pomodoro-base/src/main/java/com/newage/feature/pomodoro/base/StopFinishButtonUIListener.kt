@@ -17,4 +17,6 @@ interface StopFinishButtonUIListener {
     }
 
     fun stopButtonText(text: String)
+
+    fun resetButtonText(text: String)
 }

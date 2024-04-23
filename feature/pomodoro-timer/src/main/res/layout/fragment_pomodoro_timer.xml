@@ -32,6 +32,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginTop="@dimen/_5sdp"
         android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.SubText"
+        android:textSize="@dimen/_16ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
@@ -39,9 +40,10 @@
 
     <ImageButton
         android:id="@+id/ib_previous"
-        android:layout_width="@dimen/_25sdp"
-        android:layout_height="@dimen/_25sdp"
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_31sdp"
         android:background="?attr/actionBarItemBackground"
+        android:contentDescription="@null"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_previous"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +51,10 @@
 
     <ImageButton
         android:id="@+id/ib_next"
-        android:layout_width="@dimen/_25sdp"
-        android:layout_height="@dimen/_25sdp"
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_31sdp"
         android:background="?attr/actionBarItemBackground"
+        android:contentDescription="@null"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_next"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,14 +63,14 @@
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progress_bar"
         style="@style/TextAppearance.Pomodoro.Content.Timer.CircularProgress.Green"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
         android:layout_marginTop="@dimen/_15sdp"
         android:max="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_round_count"
-        tools:progress="75" />
+        tools:progress="25" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_timer"
@@ -86,6 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.Text.PomodoroCount.Green"
+        android:textSize="@dimen/_17ssp"
         app:layout_constraintBottom_toTopOf="@+id/progress_bar"
         app:layout_constraintEnd_toEndOf="@+id/tv_timer"
         app:layout_constraintHorizontal_bias="0.5"

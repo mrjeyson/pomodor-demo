@@ -8,4 +8,5 @@
         <item quantity="other">You did %1$d pomodoros</item>
     </plurals>
     <string name="you_have_not_completed_any_pomodoros">You haven\'t completed any pomodoros</string>
+    <string name="_00_00_am">00:00 AM</string>
 </resources>

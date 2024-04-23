@@ -7,17 +7,17 @@
     <item
         android:id="@+id/stopwatch"
         android:title="@string/stopwatch"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/stopwatch"/>
     <item
         android:id="@+id/timer"
         android:title="@string/timer"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/timer"/>
     <item
         android:id="@+id/intervals"
         android:title="@string/intervals"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/interval"/>
     <item
         android:id="@+id/pomodoro"
         android:title="@string/pomodoro"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/pomodoro"/>
 </menu>

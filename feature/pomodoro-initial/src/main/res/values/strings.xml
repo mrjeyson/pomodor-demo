@@ -12,4 +12,6 @@
     <string name="_05">05</string>
     <string name="_15">15</string>
     <string name="_04">04</string>
+    <string name="hint_00">00</string>
+    <string name="static_text">:</string>
 </resources>

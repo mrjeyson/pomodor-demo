@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <com.newage.feature.pomodoro.initial.InitialSetupHourMinuteItemView
             android:id="@+id/focus_duration"
             android:layout_width="match_parent"

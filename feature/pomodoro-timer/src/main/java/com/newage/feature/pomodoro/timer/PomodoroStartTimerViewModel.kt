@@ -19,8 +19,8 @@ class PomodoroStartTimerViewModel @Inject constructor() : StopwatchViewModel() {
     private val _timeCounter = MutableLiveData(POMODORO_START_SEC)
     val timeCounter: LiveData<Int> = _timeCounter
 
-    var handlerBase = Handler(Looper.getMainLooper())
-    val countDownRunnable = Runnable {
+    private var handlerBase = Handler(Looper.getMainLooper())
+    private val countDownRunnable = Runnable {
         var count = _timeCounter.value ?: 0
         count--
         _timeCounter.postValue(count)

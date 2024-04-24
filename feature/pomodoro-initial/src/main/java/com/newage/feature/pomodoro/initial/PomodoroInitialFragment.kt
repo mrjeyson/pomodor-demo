@@ -2,10 +2,8 @@ package com.newage.feature.pomodoro.initial
 
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.newage.feature.pomodoro.base.PomodoroButtonClickListener
-import com.newage.feature.pomodoro.base.PomodoroSharedViewModel
 import com.newage.feature.pomodoro.base.StopFinishButtonUIListener
 import com.timers.stopwatch.core.common.android.StopwatchFragment
 import com.timers.stopwatch.core.common.android.extensions.showToastShort
@@ -26,8 +24,6 @@ class PomodoroInitialFragment :
     PomodoroButtonClickListener {
 
     override val viewModel: PomodoroInitialViewModel by viewModels()
-
-    private val pomodoroSharedViewModel: PomodoroSharedViewModel by activityViewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

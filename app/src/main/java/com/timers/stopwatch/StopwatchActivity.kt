@@ -13,6 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.timers.stopwatch.core.common.android.ChildDestinationChangeListener
 import com.timers.stopwatch.databinding.ActivityAppBinding
 import dagger.hilt.android.AndroidEntryPoint
+
 /**
  * Created by Andriy Deputat email(andriy.deputat@gmail.com) on 21.11.2022.
  */
@@ -28,22 +29,10 @@ class StopwatchActivity : AppCompatActivity(), ChildDestinationChangeListener {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-        /*supportActionBar?.apply {
-            title = getString(com.timers.stopwatch.core.common.android.R.string.app_name)
-            // show back button on toolbar
-            // on back button press, it will navigate to parent activity
-            setDisplayHomeAsUpEnabled(true)
-            setDisplayShowHomeEnabled(true)
-        }*/
-
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment?
         val navController = navHostFragment!!.navController
-        // val navController = findNavController(R.id.nav_host_fragment)
-        // Find reference to bottom navigation view
-        val navView: BottomNavigationView = findViewById(R.id.bottom_nav_view)
-        // Hook your navigation controller to bottom navigation view
-        navView.setupWithNavController(navController)
+        binding.bottomNavView.setupWithNavController(navController)
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             handleDestinationChange(controller, destination, arguments)
         }

@@ -5,7 +5,6 @@ import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.View
 import android.widget.ImageButton
-import android.widget.ImageView
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
@@ -24,10 +23,10 @@ class InitialSetupHourMinuteItemView @JvmOverloads constructor(
 ) :
     MaterialCardView(context, attrs, defStyleAttr) {
 
-    var hourHintText: String? = ""
-    var hourText: String? = ""
-    var minuteHintText: String? = ""
-    var minuteText: String? = ""
+    private var hourHintText: String? = ""
+    private var hourText: String? = ""
+    private var minuteHintText: String? = ""
+    private var minuteText: String? = ""
 
     init {
         this.radius = context.resources.getDimension(com.intuit.sdp.R.dimen._8sdp)
@@ -132,7 +131,7 @@ class InitialSetupHourMinuteItemView @JvmOverloads constructor(
         val minuteValue =
             if (!TextUtils.isEmpty(etMinute.text)) etMinute.text.toString().toInt() else 0
 
-        var minuteText = if (minuteValue > 0) {
+        val minuteText = if (minuteValue > 0) {
             "$minuteValue"
         } else {
             if (!TextUtils.isEmpty(etMinute.text)) {

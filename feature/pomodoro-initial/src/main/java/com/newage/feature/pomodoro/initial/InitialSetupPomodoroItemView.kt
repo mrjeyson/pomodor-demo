@@ -21,16 +21,16 @@ class InitialSetupPomodoroItemView @JvmOverloads constructor(
     defStyleAttr: Int = 0,
 ) :
     MaterialCardView(context, attrs, defStyleAttr) {
-    var initialPomodoroHint: String? = ""
-    var initialPomodoroText: String? = ""
+    private var initialPomodoroHint: String? = ""
+    private var initialPomodoroText: String? = ""
 
     init {
         this.radius = context.resources.getDimension(com.intuit.sdp.R.dimen._8sdp)
         this.setCardBackgroundColor(
-            context.resources.getColor(
-                com.timers.stopwatch.core.common.android.R.color.white_tint,
-            ),
-        )
+            context.resources
+                .getColor(
+                    com.timers.stopwatch.core.common.android.R.color.white_tint,
+                ),)
         this.cardElevation = context.resources.getDimension(com.intuit.sdp.R.dimen._4sdp)
         init(attrs)
     }
@@ -92,7 +92,7 @@ class InitialSetupPomodoroItemView @JvmOverloads constructor(
         val etHour = findViewById<TextInputEditText>(R.id.et_pomodoro)
         val hourValue = if (!TextUtils.isEmpty(etHour.text)) etHour.text.toString().toInt() else 0
 
-        var text = if (hourValue > 0) {
+        val text = if (hourValue > 0) {
             "$hourValue"
         } else {
             "${etHour.hint}"

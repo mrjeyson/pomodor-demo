@@ -9,7 +9,7 @@
         android:name="com.timers.stopwatch.core.common.android.navigation.StopwatchHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         app:defaultNavHost="true"
         app:layout_constrainedHeight="true"
         app:layout_constraintBottom_toTopOf="@+id/fab_play_pause"
@@ -36,8 +36,8 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_17sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:gravity="center_horizontal|top"
         android:text="@string/reset"
@@ -106,8 +106,8 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_stop_finish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_17sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:gravity="center_horizontal|top"
         android:text="@string/stop"

@@ -2,7 +2,7 @@
 <resources>
 
     <style name="TextAppearance.Pomodoro.Content.Setup.TextOnly.Large" parent="TextAppearance.Stopwatch.Headline2">
-        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
         <item name="android:textColor">@color/pomodoro_timer_gray_color</item>
         <item name="fontFamily">@font/inter_600</item>
     </style>

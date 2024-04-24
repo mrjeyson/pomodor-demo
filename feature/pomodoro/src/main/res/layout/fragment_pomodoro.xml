@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_reset"
         app:layout_constraintEnd_toStartOf="@id/fab_play_pause"
         app:layout_constraintStart_toStartOf="parent"
-        app:maxImageSize="@dimen/_24sdp"
+        app:maxImageSize="@dimen/_25sdp"
         app:srcCompat="@drawable/ic_pomodoro_reset"
         app:tint="@color/icon_tint_color" />
 
@@ -55,13 +55,13 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_play_pause"
-        android:layout_width="@dimen/_65sdp"
-        android:layout_height="@dimen/_65sdp"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:contentDescription="@null"
         android:elevation="@dimen/_4sdp"
         app:backgroundTint="@color/contents_main_background_color"
-        app:fabCustomSize="@dimen/_65sdp"
+        app:fabCustomSize="@dimen/_60sdp"
         app:layout_constraintBottom_toTopOf="@+id/tv_play_pause"
         app:layout_constraintEnd_toStartOf="@+id/fab_stop_finish"
         app:layout_constraintStart_toEndOf="@+id/fab_reset"
@@ -100,7 +100,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_stop_finish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fab_play_pause"
-        app:maxImageSize="@dimen/_30sdp"
+        app:maxImageSize="@dimen/_25sdp"
         app:srcCompat="@drawable/ic_pomodoro_stop"
         app:tint="@color/icon_tint_color" />
 

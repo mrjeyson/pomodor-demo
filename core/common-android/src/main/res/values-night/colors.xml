@@ -12,6 +12,7 @@
     <color name="dodger_blue_2">#147EFB</color>
     <color name="mountain_mist">#919094</color>
     <color name="black">#E0E2EC</color>
+    <color name="white">#FFFFFFFF</color>
 
     <color name="emperor">#E0E2EC</color>
     <color name="white_tint">#44474E</color>
@@ -29,6 +30,7 @@
     <color name="icon_color">#FFFFFF</color>
     <color name="play_pause_icons_color">#000000</color>
     <color name="play_pause_buttons_background">#44474E</color>
+    <color name="unselected_navigation_icon_color">#C7C6CA</color>
 
 
 </resources>

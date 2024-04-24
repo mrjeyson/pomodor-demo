@@ -49,6 +49,21 @@
         tools:itemCount="1"
         tools:listitem="@layout/pomodoro_completed_item_layout" />
 
+
+    <View
+        android:id="@+id/shadowBackground"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:alpha="0.5"
+        android:background="@drawable/background_shadow"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_tomato_list" />
+
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_result_icon"
         android:layout_width="@dimen/_130sdp"
@@ -57,14 +72,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_tomato_list"
-        app:srcCompat="@drawable/ic_complete_check_mark" />
+        app:srcCompat="@drawable/ic_not_complete_cross_mark" />
+
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ic_result_icon_shadow"
-        android:layout_width="@dimen/_120sdp"
-        android:visibility="invisible"
-        android:alpha="0.3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_result_icon"

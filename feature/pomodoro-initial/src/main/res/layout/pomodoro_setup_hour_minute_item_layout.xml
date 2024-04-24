@@ -6,6 +6,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@color/pomodoro_duration_card_background"
         android:layout_height="@dimen/_86sdp"
         android:padding="@dimen/_10sdp">
 

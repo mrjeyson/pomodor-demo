@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:text="@{String.valueOf(startCount)}"
         android:textAppearance="@style/TextAppearance.Pomodoro.Content.Timer.TextOnly.Big"
-        android:textSize="@dimen/_96ssp"
+        android:textSize="@dimen/_90ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starting_in"

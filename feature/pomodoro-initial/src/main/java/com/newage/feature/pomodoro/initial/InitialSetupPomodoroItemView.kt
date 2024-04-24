@@ -5,6 +5,7 @@ import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textview.MaterialTextView
@@ -38,7 +39,7 @@ class InitialSetupPomodoroItemView @JvmOverloads constructor(
         View.inflate(context, R.layout.pomodoro_setup_pomodoro_item_layout, this)
 
         val tvTitle = findViewById<MaterialTextView>(R.id.tv_title)
-        val ibPlus = findViewById<ImageButton>(R.id.ib_plus)
+        val ibPlus = findViewById<ImageView>(R.id.ib_plus)
         val ibMinus = findViewById<ImageButton>(R.id.ib_minus)
         val etPomodoro = findViewById<TextInputEditText>(R.id.et_pomodoro)
         val tvPomodoro = findViewById<MaterialTextView>(R.id.tv_pomodoro)

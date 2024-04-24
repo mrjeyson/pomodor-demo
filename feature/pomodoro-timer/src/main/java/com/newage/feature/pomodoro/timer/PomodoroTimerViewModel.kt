@@ -80,8 +80,8 @@ class PomodoroTimerViewModel @Inject constructor() : StopwatchViewModel() {
                 timer.start()
             }
 
-            TimerMode.SORT_BREAK -> {
-                _timerMode.value = TimerMode.SORT_BREAK
+            TimerMode.SHORT_BREAK -> {
+                _timerMode.value = TimerMode.SHORT_BREAK
                 percentageDuration = sortBreakDuration
                 timer.setTime(sortBreakDuration, MILLISECONDS)
                 timer.start()
@@ -122,13 +122,13 @@ class PomodoroTimerViewModel @Inject constructor() : StopwatchViewModel() {
     private fun updateTimerMode() {
         when (_timerMode.value) {
             TimerMode.FOCUS -> {
-                _timerMode.value = TimerMode.SORT_BREAK
+                _timerMode.value = TimerMode.SHORT_BREAK
                 percentageDuration = sortBreakDuration
                 timer.setTime(sortBreakDuration, MILLISECONDS)
                 timer.start()
             }
 
-            TimerMode.SORT_BREAK -> {
+            TimerMode.SHORT_BREAK -> {
                 if (pomodoroCount % longBreakAfter == 0) {
                     _timerMode.value = TimerMode.LONG_BREAK
                     percentageDuration = longBreakDuration
@@ -166,6 +166,6 @@ class PomodoroTimerViewModel @Inject constructor() : StopwatchViewModel() {
     }
 
     enum class TimerMode {
-        FOCUS, SORT_BREAK, LONG_BREAK, DONE
+        FOCUS, SHORT_BREAK, LONG_BREAK, DONE
     }
 }

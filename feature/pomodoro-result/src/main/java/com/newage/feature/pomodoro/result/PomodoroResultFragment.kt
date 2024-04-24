@@ -61,6 +61,7 @@ class PomodoroResultFragment :
             binding.tvPomodoroCount.text =
                 resources.getString(R.string.you_have_not_completed_any_pomodoros)
             binding.icResultIconShadow.visibility = View.VISIBLE
+            binding.shadowBackground.visibility = View.VISIBLE
         }
     }
 

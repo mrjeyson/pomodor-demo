@@ -67,6 +67,8 @@
     <color name="play_pause_buttons_background">#FFFFFF</color>
     <color name="unselected_navigation_icon_color">#D7E2FF</color>
 
+    <color name="shadow_background">#E6F9F5</color>
+
 
 
 </resources>
